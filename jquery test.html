@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>jQuery test</title>
+        <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous">
+        </script>
+
+<style>
+    #btn1 {
+        background-color: mediumvioletred;
+    }
+    #btn2 {
+        background-color: dodgerblue;
+    }
+    #parag1 {
+        background-color: mediumvioletred;
+    }
+    #parag2 {
+        background-color: sandybrown;
+    }
+</style>
+</head>
+<body>
+    <section>
+        <button type="button" id="btn1">Button 1</button> <button type="button" id="btn2">Button 2</button>
+        <div id="parag1"><p>Laborum ex laborum duis deserunt. Mollit incididunt dolore irure sint ipsum qui consequat deserunt et irure ea laborum nostrud excepteur. Laboris sit eiusmod pariatur anim commodo quis ipsum laboris ex exercitation dolor reprehenderit consequat sunt. Amet qui esse labore anim ipsum eu ad ad. Occaecat laborum excepteur excepteur nulla anim. Lorem reprehenderit labore cupidatat in amet do ad pariatur consequat quis irure incididunt ullamco. Amet veniam amet aute pariatur nulla do incididunt.</p></div>
+        <div id="parag2"><p>Laborum ex laborum duis deserunt. Mollit incididunt dolore irure sint ipsum qui consequat deserunt et irure ea laborum nostrud excepteur. Laboris sit eiusmod pariatur anim commodo quis ipsum laboris ex exercitation dolor reprehenderit consequat sunt. Amet qui esse labore anim ipsum eu ad ad. Occaecat laborum excepteur excepteur nulla anim. Lorem reprehenderit labore cupidatat in amet do ad pariatur consequat quis irure incididunt ullamco. Amet veniam amet aute pariatur nulla do incididunt.</p></div>
+        <input type="password" name="password" value="">
+        <p id="display"></p>
+        <ol id="names">
+            
+        </ol>
+    </section>
+
+<script>
+    $(document).ready(function() {
+        $('#btn1').click(function() {
+            $('#parag1').toggle();
+        });
+        $('#btn2').on('click', function(){
+            $('#parag2').css({'color': 'red', 'backgroundColor': 'white'});
+        });
+        $('input').keyup(function(e){
+            var password = $(this).val();
+            var numbers = $(this).val().length;
+            var code = e.which;
+            $('#display').text(password + ":" + numbers + ":" + code);
+            if (numbers === 15) {
+                alert("You've reached max numbers")
+            }
+        });
+        var myArr = ['Daniel', 'Svetlana', 'Teodor'];
+
+        $.each(myArr, function(i, name){
+            $('ol').append('<li>'+name+'</li>');
+        })
+        
+    });
+</script>
+</body>
+</html>

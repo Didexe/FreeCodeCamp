@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Weather App</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <main>
+            <header><h1>YOUR LOCAL WEATHER</h1><hr></header>
+            
+            <section>
+                <div><p id="location"><span id="city">Getting your location ...</span><span id="country"></span></p></div>
+                <div onclick="changeTemp()"><p class="tooltip"><span class="tooltiptext">Click to change to C or F</span><span id="temp"></span><span id="degree">&deg;</span><span id="tempUnits">C</span></p></div>
+                <div id="weather"></div>
+                <div id="icon"></div>
+            </section>
+            <footer>
+                <hr>
+                <p>created by Daniel Petrov</p>
+                <script src="modernizr-custom.js" type="text/javascript"></script>
+                <script src="scripts.js" type="text/javascript"></script>
+            </footer>
+        </main>
+    </body>
+</html>

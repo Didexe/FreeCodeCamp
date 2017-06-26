@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>JS Calculator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+        </script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">
+                <nav>
+                    <ul>
+                        <li>JavaScript Calculator</li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="display">
+            <input type="text" id="entry">
+            <input type="text" id="operations">
+            </div>
+                <table id="main" cellspacing="4">
+                    <tr>
+                        <td><button type="button" class="button-drk">CE</button></td>
+                        <td><button type="button" class="button-drk">C</button></td>
+                        <td><button type="button" class="button-drk">/</button></td>
+                        <td><button type="button" class="button-drk">*</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" class="button-lght">7</button></td>
+                        <td><button type="button" class="button-lght">8</button></td>
+                        <td><button type="button" class="button-lght">9</button></td>
+                        <td><button type="button" class="button-drk">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" class="button-lght">4</button></td>
+                        <td><button type="button" class="button-lght">5</button></td>
+                        <td><button type="button" class="button-lght">6</button></td>
+                        <td><button type="button" class="button-drk">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" class="button-lght">1</button></td>
+                        <td><button type="button" class="button-lght">2</button></td>
+                        <td><button type="button" class="button-lght">3</button></td>
+                        <td rowspan="2"><button type="button" id="equals">=</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button type="button" id="zero" class="button-lght">0</button></td>
+                        <td><button type="button" class="button-drk">.</button></td>
+                    </tr>
+                </table>
+            </div>
+            <script src="js/index.js"></script>
+    </body>
+</html>

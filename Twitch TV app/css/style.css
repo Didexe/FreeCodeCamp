@@ -1,0 +1,80 @@
+header {
+    background: gray;
+    width: 50%;
+    height: 100px;
+    margin: auto;
+}
+
+h1 {
+    color: white;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+#container {
+    width: 50%;
+    margin: auto;
+}
+
+.channel {
+    width: 90%;
+    height: 80px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.offline {
+    background: lightcoral;
+}
+
+.online {
+    background: lightseagreen;
+}
+
+.stream-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid rgb(250,250,250);
+}
+
+.stream-name {
+   color: white;
+   width: 40%;
+   text-align: left;
+   margin-left: 10%;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.stream-status {
+    color: white;
+    margin-left: 20%;
+    font-family: monospace;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.flex-item {
+    display: flex;
+    align-self: center;
+}
+
+footer {
+    background: grey;
+    color: white;
+    font-family: sans-serif;
+    font-size: 80%;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+a:link {
+    text-decoration: none;
+}
